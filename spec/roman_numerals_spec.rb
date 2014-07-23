@@ -25,5 +25,21 @@ describe('roman_numerals') do
   it("returns the roman numeral VI for the arabic number 9") do
     expect(roman_numerals(9)).to eq("IX")
   end
+
+  it("returns the roman numeral XL for the arabic number 40") do
+    expect(roman_numerals(40)).to eq("XL")
+  end
+
+  it("returns the roman numeral XL for the arabic number 40") do
+    expect(roman_numerals(99)).to eq("XCIX")
+  end
+
+   it("returns the roman numeral CDXCIX for the arabic number 499") do
+    expect(roman_numerals(499)).to eq("CDXCIX")
+  end
+
+  it("returns the roman numeral DMXCIX for the arabic number 999") do
+    expect(roman_numerals(999)).to eq("DMXCIX")
+  end
 end
 
