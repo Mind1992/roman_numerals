@@ -1,4 +1,12 @@
 def roman_numerals(num)
-  romans = {I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000}
-  num = romans[num]
+  roman_num = []
+  romans = {M: 1000, D: 500, C: 100, L: 50, X: 10, V: 5, I: 1 }
+
+  romans.each do |k,v|
+    while num>=v
+      roman_num << k.to_s
+      num-=v
+    end
+  end
+  roman_num.join
 end
