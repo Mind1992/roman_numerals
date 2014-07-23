@@ -41,5 +41,17 @@ describe('roman_numerals') do
   it("returns the roman numeral DMXCIX for the arabic number 999") do
     expect(roman_numerals(999)).to eq("DMXCIX")
   end
+
+  it("returns the roman numeral MMM for the arabic number 3000") do
+    expect(roman_numerals(3000)).to eq("MMM")
+  end
+
+  it("returns the roman numeral MMM for the arabic number 3000") do
+    expect(roman_numerals(3000)).to eq("MMM")
+  end
+
+  it("returns the roman numeral MMM for the arabic number 3000") do
+    expect(roman_numerals(3999)).to eq("MMMDMXCIX")
+  end
 end
 
